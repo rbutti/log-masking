@@ -1,5 +1,7 @@
 language: java
 before_install:
   - pip install --user codecov
+env:
+  - CODECOV_TOKEN=aa9cec0d-dfee-4aca-a8c0-c645d115373b
 after_success:
   - codecov --file coverage/lcov.info --disable search
