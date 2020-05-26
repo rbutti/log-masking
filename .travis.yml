@@ -3,5 +3,6 @@ sudo: false # faster builds
 
 script:
  - mvn clean install
+ - mvn test
 after_success:
   - bash <(curl -s https://codecov.io/bash)
